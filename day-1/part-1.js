@@ -1,9 +1,5 @@
 const fs = require("fs");
 
-let sample = `1abc2
-pqr3stu8vwx
-a1b2c3d4e5f
-treb7uchet`
 
 let text = fs.readFile("day-1/input.txt", 'utf-8', (err, data)=>{
     if(err){
@@ -38,4 +34,7 @@ let getDigits = (input)=>{
     console.log(ff.reduce((a, b)=> a+b  , 0)) //answer was 54968
 
 }
+
+
+
 
